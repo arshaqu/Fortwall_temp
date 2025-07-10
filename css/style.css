@@ -45,8 +45,19 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+  .js-fullheight {
+  height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+@media (max-width: 768px) {
+  .js-fullheight {
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+}
 
 @-ms-viewport {
   width: device-width; }
@@ -177,8 +188,7 @@ img {
   vertical-align: middle;
   border-style: none; }
 
-svg:not(:root) {
-  overflow: hidden; }
+
 
 table {
   border-collapse: collapse; }
@@ -297,8 +307,7 @@ summary {
 template {
   display: none; }
 
-[hidden] {
-  display: none !important; }
+
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -5253,7 +5262,7 @@ button.bg-dark:focus {
   display: block;
   width: 100%;
   padding: 0;
-  overflow: hidden; }
+ }
   .embed-responsive::before {
     display: block;
     content: ""; }
@@ -6017,7 +6026,6 @@ button.bg-dark:focus {
   width: 1px;
   height: 1px;
   padding: 0;
-  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0; }
@@ -7075,7 +7083,6 @@ button.bg-dark:focus {
   white-space: nowrap !important; }
 
 .text-truncate {
-  overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -7215,8 +7222,7 @@ a.text-dark:hover, a.text-dark:focus {
 .visible {
   visibility: visible !important; }
 
-.invisible {
-  visibility: hidden !important; }
+
 
 @media print {
   *,
@@ -7275,7 +7281,6 @@ body {
   font-weight: 300;
   color: #666666; }
   body.menu-show {
-    overflow: hidden;
     position: fixed;
     height: 100%;
     width: 100%; }
@@ -8351,7 +8356,6 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -8654,7 +8658,6 @@ textarea.form-control {
   box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
   border-radius: 16px;
   opacity: 0;
-  visibility: hidden;
   -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
   -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
   transition: opacity .2s ease-out, visibility 0s linear .2s;
