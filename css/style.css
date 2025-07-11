@@ -383,6 +383,28 @@ mark,
   font-size: 90%;
   text-transform: uppercase; }
 
+
+
+
+/* Default: hide mobile logo */
+.logo-mobile {
+  display: none;
+}
+
+/* Show mobile logo on screens <= 768px, hide desktop logo */
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: inline;
+  }
+}
+
+
+
+
+
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem; }
